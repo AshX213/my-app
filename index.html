@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title> Ahmed Hassan - Todo List </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="bootstrap.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<!--Receieved Assistance from the following websites:
+https://www.w3schools.com/howto/howto_js_todolist.asp
+
+-->
+<body>
+
+<div class="row" id="header_row">
+  <h2 id="todo_header">To-Do List</h2>
+</div>
+
+<div class="row" id="add_list_row">
+  <input type="text" id="input" placeholder="Type Here!">
+  <span onclick="new_task()" class="addBtn" id="add_button">Add</span>
+
+</div>
+
+<div class="row" id="list_header">
+  <h2 id="list_header">List</h2>
+
+</div>
+
+<div class="row" id="list_row">
+  <ul id="actual_list">
+    <!-- <li>Hit the gym</li>
+    <li class="marked">File Taxes</li> -->
+
+  </ul>
+</div>
+
+<script src="script2.js" charset="utf-8"></script>
+
+</body>

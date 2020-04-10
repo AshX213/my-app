@@ -1,0 +1,104 @@
+/* Received Assistance from the following:
+https://www.w3schools.com/howto/howto_js_todolist.asp
+*/
+
+#header_row{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: lightgrey;
+}
+
+#todo_header{
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#add_list_row{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: #FAFAFA;
+}
+
+#input{
+position: relative;
+text-align: center;
+margin-left: auto;
+margin-right: 2%;
+margin-top: 3%;
+margin-bottom: 2%;
+width: 20%;
+border: 2px solid darkgrey;
+border-radius: 3px;
+
+}
+
+#add_button{
+  position: relative;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  padding: 10px;
+  text-align: center;
+  width: 12%;
+  background-color: #d9d9d9;
+  transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#list_header{
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#list_row{
+  position: relative;
+  margin: auto;
+}
+
+#actual_list{
+  position: relative;
+  margin: auto;
+}
+
+/*Making Style Changes to the List Elements*/
+ul li{
+  position: relative;
+  background-color: #eee;
+  font-size: 20px;
+  padding: 15px 25px 15px 30px;
+  transition: 0.3s;
+  list-style: none;
+  user-select: none;
+}
+
+
+ul li:hover{
+  background-color: #c6c6c6;
+}
+
+ul li.marked{
+  text-decoration: line-through;
+  color: #fff;
+  background-color: #888;
+}
+
+ul li.marked::before{
+  position: absolute;
+  border: solid 0px 2px 2px 0px #fff;
+  top: 2%;
+  left: 3%;
+  transition: rotate(45deg);
+  height: 15px;
+  width: 5px;
+}
+
+ul li:nth-child(even){
+  background-color: #bebebe;
+}
